@@ -28,6 +28,11 @@ basicCN <- ggplot(davisdata,aes(y=alcohol,x=Seat))
 basicCN + geom_boxplot()
 ```
   
+```{r}
+boxplot(alcohol~Seat,data=davisdata)
+```
+  
+This boxplot shows the difference in the number of alcohol consumed in the back, front, and middle seats. 
   
 ### get fancy  
 
