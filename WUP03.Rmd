@@ -1,0 +1,35 @@
+---
+title: "WUP_03"
+author: "Claryssa Jimenez"
+date: "2024-02-13"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+davisdata=read.csv("UCDavis.csv")
+```
+
+# Introduction 
+
+The research question is:
+Is there a difference in the average amount of alcohol consumed per week by UC Davis Students based on the different rows they sit in class?
+
+$H_0$: There is no difference between the average number of drinks imbibed between people based on the row they sit in.
+
+$H_A$: The average number drinks is different between at least two rows.   
+
+# Methods
+
+Data from UC Davis: Seat is categorical; alcohol is  numerical. 
+Therefore we will use the Numerical~Categorical helper file. 
+
+# Description 
+
+### Graphical Description
+
+```{r}
+boxplot(alcohol~Seat,data=davisdata)
+```
+
+This boxplot shows that the students in the back row tend to drink more than the other 2 rows. 
