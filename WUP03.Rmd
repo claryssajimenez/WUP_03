@@ -33,3 +33,13 @@ boxplot(alcohol~Seat,data=davisdata)
 ```
 
 This boxplot shows that the students in the back row tend to drink more than the other 2 rows. 
+
+### Numerical Description 
+
+
+
+
+### Inferential Description
+
+
+# Conclusions and Discussion 
