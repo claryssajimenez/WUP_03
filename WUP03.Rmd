@@ -57,4 +57,20 @@ The inferential results show that:
 The p-value is 0.000353 which is < 0.5, meaning that there is not a difference in the amount of alcohol consumption.  
 
 
+### When significant follow up with TukeyHSD  
+
+```{r}
+plot(TukeyHSD(model1))
+```
+
+The HSD plot is showing that the students seat in the back row consume significantly more alcohol that the students in the front and middle rows. 
+
+
+
+
+
+
+
+
+
 
