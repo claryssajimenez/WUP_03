@@ -35,3 +35,11 @@ boxplot(alcohol~Seat,data=ucdavis1)
 ```
 
 This boxplot shows that the students in the back row tend to drink more than the other 2 rows. 
+
+### Numerical Description
+
+```{r}
+favstats(alcohol~Seat,data=ucdavis1)
+```
+
+The numerical description of this table shows the median Back Seat consumption is 3.5, Front Seat consumption is 0.0, and Middle Seat consumption is 1.0
