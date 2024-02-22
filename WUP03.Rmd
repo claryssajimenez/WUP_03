@@ -54,7 +54,7 @@ summary.aov(model1)
 
 The inferential results show that: 
 
-The p-value is 0.000353 which is < 0.5, meaning that there is not a difference in the amount of alcohol consumption.  
+The p-value is 0.000353 which is < 0.05, meaning that there is not a difference in the amount of alcohol consumption.  
 
 
 ### When significant follow up with TukeyHSD  
@@ -64,6 +64,15 @@ plot(TukeyHSD(model1))
 ```
 
 The HSD plot is showing that the students seat in the back row consume significantly more alcohol that the students in the front and middle rows. 
+
+# Conclussion and Discussion 
+
+Since the p-value is < 0.05, we reject the $H_0$ that there is no difference between the average number of drinks imbibed between people based on the row they sit in.
+
+
+
+
+
 
 
 
