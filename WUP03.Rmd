@@ -7,13 +7,15 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
-davisdata=read.csv("UCDavis.csv")
+library(tigerstats)
+library(tidyverse)
+data (ucdavis1)
+davisdata = ucdavis1
 ```
 
 # Introduction 
 
-The research question is:
-Is there a difference in the average amount of alcohol consumed per week by UC Davis Students based on the different rows they sit in class?
+The research question is: Is there a difference in the average amount of alcohol consumed per week by UC Davis Students based on the different rows they sit in class?
 
 $H_0$: There is no difference between the average number of drinks imbibed between people based on the row they sit in.
 
@@ -29,17 +31,7 @@ Therefore we will use the Numerical~Categorical helper file.
 ### Graphical Description
 
 ```{r}
-boxplot(alcohol~Seat,data=davisdata)
+boxplot(alcohol~Seat,data=ucdavis1)
 ```
 
 This boxplot shows that the students in the back row tend to drink more than the other 2 rows. 
-
-### Numerical Description 
-
-
-
-
-### Inferential Description
-
-
-# Conclusions and Discussion 
