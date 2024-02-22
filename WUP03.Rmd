@@ -43,3 +43,18 @@ favstats(alcohol~Seat,data=ucdavis1)
 ```
 
 The numerical description of this table shows the median Back Seat consumption is 3.5, Front Seat consumption is 0.0, and Middle Seat consumption is 1.0
+
+
+### Inferential Results 
+
+```{r}
+model1 <- aov(alcohol~Seat,data=davisdata)
+summary.aov(model1)
+```
+
+The inferential results show that: 
+
+The p-value is 0.000353 which is < 0.5, meaning that there is not a difference in the amount of alcohol consumption.  
+
+
+
